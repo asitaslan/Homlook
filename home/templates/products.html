@@ -1,0 +1,71 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}
+ {{  setting.title }}
+{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %} {{setting.description}}{% endblock %}
+{% block head %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ setting.icon.url }}" />
+{% endblock %}
+{% block slider %}
+    {% include "slider.html" %}
+{% endblock %}
+{% block content %}
+    <div id ="breadcrumb">
+       <div class="container">
+           <li><a href="/">AnaSayfa </a>></li>
+           <li class="active">Otel</li>
+         </div>
+     </div>
+    <section class="property-grid grid">
+        <div class="container">
+            <div class="row">
+                {% for rs in products %}
+                    <div class="col-md-4">
+                        <div class="card-box-a card-shadow">
+                            <div class="img-box-a">
+                                <img src="{{rs.image.url}}" alt="" class="img-a img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-overlay-a-content">
+                                    <div class="card-header-a">
+                                        <h2 class="card-title-a">
+                                            <a href="#">{{rs.title}}
+                                                <br /> {{rs.sehir}}
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-body-a">
+                                        <div class="price-box d-flex">
+                                            <span class="price-a">{{ rs.tip }} | {{ rs.price }} TL</span>
+                                        </div>
+                                        <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="link-a">Detaylar
+                                            <span class="ion-ios-arrow-forward"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-footer-a">
+                                        <ul class="card-info d-flex justify-content-around">
+                                            <li>
+                                                <h4 class="card-info-title">Alan</h4>
+                                                <span>{{ rs.alan }}
+                                                <sup>2</sup>
+                                            </span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Banyo</h4>
+                                                <span>{{ rs.banyo }}</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+  <!--/ Property Grid End /-->
+{% endblock %}
+

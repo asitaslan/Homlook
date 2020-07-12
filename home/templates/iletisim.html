@@ -1,0 +1,59 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}
+ {{ setting.title }}
+{% endblock %}
+{% block keywords %}{{ setting.keywords }}{% endblock %}
+{% block description %} {{ setting.description }}{% endblock %}
+{% block head %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ setting.icon.url }}" />
+{% endblock %}
+{% block content %}
+
+     <section class="section-about">
+        <div id ="breadcrumb">
+            <div class="container">
+                <li><a href="/">AnaSayfa </a>></li>
+                <li class="active">İletişim</li>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+               {% for rs in sabitiletisim %}
+                <div class="about-img-box">
+                    <img src="{{rs.image.url}}" alt="" class="img-fluid">
+                </div>
+              {% endfor %}
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="billing-details">
+
+                            <div class="section-title">
+                                <h3 class="title">İletişim Formu</h3>
+                            </div>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.tags }}" role="alert">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                            <form action="" method="post">
+                                  {% csrf_token %}
+                                  {{ form.as_p }}
+                                <input type="submit" value="GÖNDER">
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-title">
+                            <h3 class="title">İletişim Bilgilerimiz</h3>
+                        </div>
+                        {{ setting.contact|safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

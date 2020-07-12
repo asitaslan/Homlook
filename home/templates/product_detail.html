@@ -1,0 +1,102 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}
+ {{  setting.title }}
+{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %} {{setting.description}}{% endblock %}
+{% block head %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ setting.icon.url }}" />
+{% endblock %}
+
+{% block content %}
+
+
+
+   <section class="property-single nav-arrow-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+              {% for rs in images %}
+                 <div class="carousel-item-b">
+                   <img src="{{rs.image.url}}" alt="">
+                 </div>
+              {% endfor %}
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-md-5 col-lg-4">
+              <div class="property-price d-flex justify-content-center foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="ion-money">TL</span>
+                  </div>
+                  <div class="card-title-c align-self-center">
+                    <h5 class="title-c">{{ product.price }}</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="property-summary">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d section-t4">
+                      <h3 class="title-d">Kısa Bilgiler</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="summary-list">
+                  <ul class="list">
+                    <li class="d-flex justify-content-between">
+                      <strong>Ürün ID:</strong>
+                      <span>{{ product.id }}</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Adres:</strong>
+                      <span>{{product.mahalle}}, {{product.semt }}, {{ product.sehir }}</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Ürün Tipi:</strong>
+                      <span>{{ product.tip }}</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Drurum:</strong>
+                      <span>{{product.category}}</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Alan:</strong>
+                      <span>{{product.alan}}m
+                        <sup>2</sup>
+                      </span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Oda:</strong>
+                      <span>{{ product.oda}}</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Banyo:</strong>
+                      <span>{{product.banyo}}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-7 section-md-t3">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">DETAYLAR</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="property-description">
+                <p class="description color-text-a">
+                 {{ product.detail | safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+

@@ -1,0 +1,191 @@
+{% load static %}
+
+
+  <!--/ Property Star /-->
+  <section class="section-property section-t8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-wrap d-flex justify-content-between">
+            <div class="title-box">
+              <h2 class="title-a">Otel</h2>
+            </div>
+            <div class="title-link">
+              <a href="/products">Otel
+                <span class="ion-ios-arrow-forward"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="property-carousel" class="owl-carousel owl-theme">
+        {% for rs in lastproducts %}
+                <div class="carousel-item-b">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            <img src="{{ rs.image.url }}" alt="" class="img-a img-fluid">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-a-content">
+                                <div class="card-header-a">
+                                    <h2 class="card-title-a">
+                                        <a href="/product/{{ rs.id }}/{{ rs.slug }}">{{rs.tip}}
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="card-body-a">
+                                    <div class="price-box d-flex">
+                                        <span class="price-a">{{rs.price}}TL</span>
+                                    </div>
+                                    <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="link-a">Detaylar
+                                        <span class="ion-ios-arrow-forward"></span>
+                                    </a>
+                                </div>
+                                <div class="card-footer-a">
+                                    <ul class="card-info d-flex justify-content-around">
+                                        <li>
+                                            <h4 class="card-info-title">Alan</h4>
+                                            <span>{{rs.alan}}m
+                                            <sup>2</sup>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Banyo</h4>
+                                            <span>{{rs.banyo}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+<section class="section-agents section-t8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-wrap d-flex justify-content-between">
+                    <div class="title-box">
+                        <h2 class="title-a">Düğün Salonu</h2>
+                    </div>
+                    <div class="title-link">
+                        <a href="/salon">Düğün Salonu
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% for rs in lastsalon %}
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-box-d">
+                        <div class="card-img-d">
+                            <img src="{{rs.image.url}}" alt="" class="img-d img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+  <!--/ Agents Star /-->
+<section class="section-agents section-t8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-wrap d-flex justify-content-between">
+                    <div class="title-box">
+                        <h2 class="title-a">Danışmanlar</h2>
+                    </div>
+                    <div class="title-link">
+                        <a href="/danismans">Tüm Danışmanlar
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% for rs in lastdanismans %}
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-box-d">
+                    <div class="card-img-d">
+                        <img src="{{rs.image.url}}" alt="" class="img-d img-fluid">
+                    </div>
+                    <div class="card-overlay card-overlay-hover">
+                        <div class="card-header-d">
+                            <div class="card-title-d align-self-center">
+                                <h3 class="title-d">
+                                    <a href="/danisman/{{ rs.id }}/{{ rs.slug }}" class="link-two">{{rs.isim}}
+                                        <br> {{ rs.soyisim }}</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-body-d">
+                            <p class="content-d color-text-a">
+                                {{rs.detail | safe}}
+                            </p>
+                            <div class="info-agents color-a">
+                                <p>
+                                    <strong>Telefon: </strong> {{ rs.telefon }}</p>
+                                <p>
+                                    <strong>Email: </strong> {{rs.email}}
+                                </p>
+                                 <p>
+                                     <a href="/danisman/{{ rs.id }}/{{ rs.slug }}" class="link-a">Detaylar
+                                          <span class="ion-ios-arrow-forward"></span>
+                                     </a>
+                                 </p>
+                            </div>
+                        </div>
+                        <div class="card-footer-d">
+                            <div class="socials-footer d-flex justify-content-center">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+  <!--/ Agents End /-->
+
+  <!--/ News Star /-->
+
+  <!--/ News End /-->
+
+
+  <!--/ Testimonials End /-->

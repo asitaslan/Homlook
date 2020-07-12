@@ -1,0 +1,89 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}
+ {{  setting.title }}
+{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %} {{setting.description}}{% endblock %}
+{% block head %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ setting.icon.url }}" />
+{% endblock %}
+
+{% block content %}
+
+ <section class="agent-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="agent-avatar-box">
+                <img src="{{danismans.image.url}}" alt="" class="agent-avatar img-fluid">
+              </div>
+            </div>
+            <div class="col-md-5 section-md-t3">
+              <div class="agent-info-box">
+                <div class="agent-title">
+                  <div class="title-box-d">
+                    <h3 class="title-d">{{danismans.isim}}
+                      <br> {{danismans.soyisim}}</h3>
+                  </div>
+                </div>
+                <div class="agent-content mb-3">
+                  <p class="content-d color-text-a">
+                    {{danismans.detail | safe}}
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Telefon: </strong>
+                      <span class="color-text-a"> {{danismans.telefon}} </span>
+                    </p>
+                    <p>
+                      <strong>Email: </strong>
+                      <span class="color-text-a"> {{danismans.email}}</span>
+                    </p>
+                    <p>
+                      <strong>Skype: </strong>
+                      <span class="color-text-a"> {{danismans.skype}}</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="socials-footer">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Agent Single End /-->
+
+{% endblock %}

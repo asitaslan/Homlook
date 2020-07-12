@@ -1,0 +1,49 @@
+{% extends "homebase.html" %}
+{% load static %}
+{% block title %}
+ {{  setting.title }}
+{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %} {{setting.description}}{% endblock %}
+{% block head %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ setting.icon.url }}" />
+{% endblock %}
+
+{% block content %}
+   <section class="section-about">
+    <div class="container">
+      <div class="row">
+           {% for rs in sabithakkimizda1 %}
+        <div class="col-sm-12">
+
+          <div class="about-img-box">
+            <img src="{{rs.image.url}}" alt="" class="img-fluid">
+          </div>
+            {% endfor %}
+          <div class="sinse-box">
+            <h3 class="sinse-title">HATEMOĞLU BEST
+              <span></span>
+              <br> SİZİN İÇİN</h3>
+            <p>EN İYİSİ</p>
+          </div>
+        </div>
+        <div class="col-md-12 section-t8">
+          <div class="row">
+              {% for rs in sabithakkimizda2 %}
+            <div class="col-md-6 col-lg-5">
+              <img src="{{rs.image.url}}" alt="" class="img-fluid">
+            </div>
+               {% endfor %}
+              <p class="color-text-a">
+
+               {{ setting.aboutus | safe }}
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+

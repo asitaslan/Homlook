@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc072fe8-d20b-4e42-8338-ba23d530a6d8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Homlook/hatemoglubest" />
+  </component>
+  <component name="ProjectId" id="1e55VWv4qoAyU6mjqg0ziQyzhyZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Homlook" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Homlook\home\templates" />
+      <recent name="C:\Users\DELL\Homlook\home\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Homlook" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Homlook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc072fe8-d20b-4e42-8338-ba23d530a6d8" name="Default Changelist" comment="" />
+      <created>1593598636346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593598636346</updated>
+      <workItem from="1593598638800" duration="3688000" />
+      <workItem from="1593602742629" duration="4048000" />
+      <workItem from="1593608086573" duration="809000" />
+      <workItem from="1593800403009" duration="2291000" />
+      <workItem from="1593846167516" duration="5550000" />
+      <workItem from="1593851758306" duration="9444000" />
+      <workItem from="1593868206433" duration="630000" />
+      <workItem from="1594028985561" duration="1176000" />
+      <workItem from="1594100409803" duration="4779000" />
+      <workItem from="1594111725597" duration="3533000" />
+      <workItem from="1594126265441" duration="1631000" />
+      <workItem from="1594131168550" duration="158000" />
+      <workItem from="1594204332778" duration="1004000" />
+      <workItem from="1594210648981" duration="340000" />
+      <workItem from="1594213923012" duration="1142000" />
+      <workItem from="1594219250986" duration="740000" />
+      <workItem from="1594452648184" duration="2970000" />
+      <workItem from="1594471641641" duration="1900000" />
+      <workItem from="1594480149257" duration="971000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593599969076">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="142" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1593599969076" />
+    <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594100903564">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1594100903564" />
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1594480152139">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1594480152139" />
+    <state x="46" y="185" key="search.everywhere.popup" timestamp="1593601207944">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="46" y="185" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1593601207944" />
+  </component>
+</project>
